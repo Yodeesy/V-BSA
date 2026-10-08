@@ -1,0 +1,7 @@
+gymnasium[box2d]>=0.29.0
+numpy>=1.21.0
+torch>=1.13.0
+scikit-learn>=1.0.0
+tqdm>=4.60.0
+tensorboard>=2.10.0
+matplotlib>=3.5.0
