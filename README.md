@@ -1,6 +1,21 @@
-# Code Supplement
+# When to Intervene? State-Aware Sparse Manipulation in Federated Reinforcement Learning
+[![arXiv](https://img.shields.io/badge/arXiv-2610.11523-b31b1b.svg)](https://arxiv.org/abs/2610.11523)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This directory contains the source code that reproduces the experimental results of the submission.
+---
+
+## Abstract
+
+Federated reinforcement learning (FRL) enables distributed agents to collaboratively train decision-making policies, but its decentralized training process also
+exposes global policy learning to Byzantine manipulation. Existing poisoning
+attacks primarily focus on how to construct malicious updates, while trajectorylevel intervention timing remains largely implicit. In sequential decision making,
+however, where an intervention is applied can alter subsequent trajectories and
+learning signals. Through controlled experiments, we find that changing the selected trajectory states materially alters attack efficacy even when the maliciousupdate construction is fixed. We therefore identify when as a distinct attack dimension and introduce the Viability-constrained Behavioral Steering Attack (VBSA), which uses local policy uncertainty to select sparse intervention states and
+applies envelope-constrained behavioral steering. Across discrete-action benchmarks, V-BSA achieves substantial degradation against robust aggregators and
+ensemble defenses with only a fraction of the interventions used by dense poisoning, while revealing task- and aggregation-dependent boundaries. Overall, our results highlight intervention timing as a distinct dimension of sequential robustness
+in FRL. The code is available at https://github.com/Yodeesy/V-BSA. 
+
+---
 
 ## Contents
 
